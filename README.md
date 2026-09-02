@@ -1,4 +1,5 @@
-# MAE-UVAD
+# TC-MAE: Unsupervised Video Anomaly Detection using Lightweight Temporal Context Masked Autoencoder
+
 This repository implements an Unsupervised Video Anomaly Detection system. The  model utilizes a Masked Autoencoder (MAE) architecture with a Convolutional  Vision Transformer (CvT) backbone.
 
 1. INTRODUCTION
