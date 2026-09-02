@@ -140,19 +140,19 @@ Key parameters to check before running:
 ### Training
 To train the model on the Avenue dataset:
 
-    $ python3 main.py --dataset avenue
+     python3 main.py --dataset avenue
 
 To train on ShanghaiTech:
 
-    $ python3 main.py --dataset shanghai
+     python3 main.py --dataset shanghai
     
 To train on UCSD_Ped1:
 
-    $ python3 main.py --dataset ucsd_ped1
+     python3 main.py --dataset ucsd_ped1
 
 To train on UCSD_Ped2:
 
-    $ python3 main.py --dataset ucsd_ped2
+     python3 main.py --dataset ucsd_ped2
 
 ### Inference / Resume
 To resume training or run inference, modify the `run_type` in `configs.py` or use the resume flag:
