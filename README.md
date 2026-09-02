@@ -73,15 +73,18 @@ Previous Frame        Current Frame         Next Frame
 This repository implements an Unsupervised Video Anomaly Detection system. The  model utilizes a Masked Autoencoder (MAE) architecture with a Convolutional  Vision Transformer (CvT) backbone.
 
 ## INTRODUCTION
---------------------------------------------------------------------------------
+
 The system is designed to learn normality from normal video data by masking random patches of the input and learning to reconstruct the original pixel values. During inference, the model fails to reconstruct unseen abnormal events accurately, resulting in a high reconstruction error that serves as the anomaly score.
 
 ## KEY FEATURES
---------------------------------------------------------------------------------
+
 **Input Representation:** Takes a temporal stack of 3 RGB frames as input (Previous, Current, Next), resulting in a 9-channel tensor [3x3]. **Backbone:** Uses a Convolutional Vision Transformer (CvT) which introduces convolutional inductive biases into the Vision Transformer architecture. **Masking Strategy:** Randomly masks a high percentage (e.g., 50-75%) of input patches to force the model to learn semantic context.**Anomaly Scoring:** Uses Mean Squared Error (MSE) between the reconstructed frame and the ground truth frame. **Post-Processing:** Applies Gaussian temporal smoothing to frame-level scores to reduce noise.
 
 ## DIRECTORY STRUCTURE
---------------------------------------------------------------------------------
+
+<p align="center">
+  
+```text
 .
 ├── configs/
 │   └── configs.py              # Configuration for Avenue and ShanghaiTech datasets
@@ -102,8 +105,10 @@ The system is designed to learn normality from normal video data by masking rand
 ├── inference.py                # Final evaluation and AUC calculation
 └── main.py                     # Entry point for training and testing
 
+```
+
 ## PREREQUISITES
---------------------------------------------------------------------------------
+
 Ensure you have the following Python libraries installed:
 
 * Python 3.8+
@@ -117,10 +122,10 @@ Ensure you have the following Python libraries installed:
 * tensorboard
 
 ## DATASET PREPARATION
---------------------------------------------------------------------------------
+
 1.  Download the **CUHK Avenue**, **ShanghaiTech**, **UCSD Ped 1 & Ped 2** datasets.
 2. CONFIGURATION: define the correct path in config.py
---------------------------------------------------------------------------------
+
 All hyperparameters are managed in `configs/configs.py`. 
 
 Key parameters to check before running:
@@ -131,7 +136,7 @@ Key parameters to check before running:
 * `run_type`: Set to 'train' for training or 'inference' for evaluation.
 
 ## USAGE
---------------------------------------------------------------------------------
+
 ### Training
 To train the model on the Avenue dataset:
     $ python3 main.py --dataset avenue
