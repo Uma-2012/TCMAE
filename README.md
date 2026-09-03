@@ -5,7 +5,12 @@
   <b>Temporal Context • Masked Reconstruction • Motion Saliency • Lightweight CvT</b>
 </p>
 
-<img width="3179" height="4494" alt="Uma_AVSS" src="https://github.com/user-attachments/assets/92dd2848-3856-4c49-abb5-aa6a013a67d2" />
+<h2 align="center">📄 Conference Poster</h2>
+
+<p align="center">
+  <img width="800" alt="TC-MAE Poster" 
+       src="https://github.com/user-attachments/assets/92dd2848-3856-4c49-abb5-aa6a013a67d2" />
+</p>
 
 
 <p align="center">
