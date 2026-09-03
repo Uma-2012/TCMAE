@@ -5,6 +5,9 @@
   <b>Temporal Context • Masked Reconstruction • Motion Saliency • Lightweight CvT</b>
 </p>
 
+<img width="3179" height="4494" alt="Uma_AVSS" src="https://github.com/user-attachments/assets/92dd2848-3856-4c49-abb5-aa6a013a67d2" />
+
+
 <p align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)]()
